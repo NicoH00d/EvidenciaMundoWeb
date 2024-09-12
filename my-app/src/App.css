@@ -1,0 +1,144 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+.weather-app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #e8e8e8;
+  height: 100vh;
+}
+
+.title {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2.5rem;
+  color: #afafaf;
+}
+
+.input-container {
+  margin: 20px 0;
+}
+
+.city-input {
+  padding: 10px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.get-weather-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  /*background-color: #007BFF;*/
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.get-weather-btn:hover {
+  background-color: #0056b3;
+}
+
+.weather-data {
+  margin-top: 0px;
+}
+
+.weather-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: white;
+}
+
+.weather-table th, .weather-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.weather-table th {
+  background-color: #7bceff;
+  color: white;
+}
+
+.weather-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.weather-table td {
+  font-size: 1.2rem;
+}
+/**CARD**/
+.card{
+  border-radius: 38px;
+  font-size: 20px;
+  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #b1eaff 0%, rgba(255, 255, 255, 0) 71.88%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+  box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+.cardtitle{
+  padding-top: 20px;
+  font-size: 30px;
+  color: #8c8c8c;
+}
+.cardtemp{
+  font-family:monospace;
+  font-size: 70px;
+  font-weight: bold;
+  color: #626262;
+}
+.padd{
+  padding-bottom: 20px;
+}
+/**INPUT**/
+
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 13em;
+  border-radius: 1rem;
+  color: rgb(141, 141, 141);
+  box-shadow: 0 0.4rem #c3dadf;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: lightcoral;
+}
+/**BUTTON**/
+
+button {
+  background-color: #7bceff;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: rgb(0, 157, 255);
+  box-shadow: 0 0.4rem #c3dadf;
+  cursor: pointer;
+ }
+ 
+ button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+ }
+ 
+ button:hover:not(:disabled) {
+  background: rgb(155, 209, 234);
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+ }
+ 
+ button:disabled {
+  cursor: auto;
+  color: grey;
+ }
+ /*Date*/
+ .date{
+  text-align: center;
+ }
