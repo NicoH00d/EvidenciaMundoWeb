@@ -7,8 +7,8 @@ const App = () => {
   const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState(null);
 
-  const openWeatherApiKey = ''; // Reemplaza con tu clave de OpenWeather
-  const weatherApiKey = ''; // Reemplaza con tu clave de WeatherAPI
+  const openWeatherApiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;  // Ahora las claves se leen desde las variables de entorno
+  const weatherApiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
   const getWeatherData = async () => {
     try {
